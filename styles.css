@@ -370,6 +370,8 @@ body{
     color: white; 
     margin-bottom: 50px;
     width: 100%; 
+    padding-bottom: 80px;
+    margin-bottom: 50px;
 }
 .highlight-text ,.section-title{
     background: linear-gradient(to right, #FFD700, #FF2E97, #A855F7);
@@ -421,60 +423,103 @@ body{
     background: linear-gradient(to right, #FF2E97, #A855F7);
     border-color: transparent;
 }
-/* Responsive style */
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .features-grid, .stats-container {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 25px;
-    }
-
-    .host-card {
-        padding: 35px;
-        gap: 30px;
-    }
-
-    .host-photo {
-        width: 160px;
-        height: 160px;
-    }
-
-    .episodes-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .episode-card {
-        width: 45%;
-    }
+/*Footer Section Style*/
+.footer-section {
+    padding: 80px 20px;
+    background-color: #050012;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background-image: url('assets/footer-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
-@media screen and (max-width: 576px) {
-    body {
-        overflow-x: hidden;
-    }
+
+.footer-social-simple {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.footer-social-simple span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #cbd5e1;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-social-simple span img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-social-simple span:hover {
+    color: white;
+}
+
+.copyright-text {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.developer-name {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+.developer-name .highlight-text {
+    font-weight: bold;
+}
+
+/* Responsive style */
+@media screen and (max-width: 992px) {
+    .navber-section { padding: 20px 40px; }
+    .features-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .stats-container { grid-template-columns: repeat(2, 1fr) !important; gap: 20px; }
+}
+@media screen and (max-width: 768px) {
     .navber-section {
         flex-direction: column;
+        gap: 15px;
         padding: 20px;
-        text-align: center;
     }
-    .full-width-wave {
-        width: 100%;
-        height: auto;
-    }
-
-    .mic-icon {
-        width: 80px !important;
-    }
-    .wide, .mid-wide {
-        grid-column: span 1 !important;
-        display: block !important;
-    }
-
     
+    .navber-section ul { gap: 15px; }
+
+    .hero-title { font-size: 42px !important; }
+    .hero-btns { flex-direction: column; width: 100%; align-items: center; }
+    .spotify-btn, .subscribe-outline { width: 90%; justify-content: center; }
+
+    .features-grid { grid-template-columns: 1fr !important; }
+    .tall, .wide, .mid-wide, .small {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+
+    .episode-card { width: 100%; max-width: 350px; }
+
     .host-card {
         flex-direction: column;
         text-align: center;
-        width: 95%;
+        gap: 20px;
+        padding: 30px 15px;
     }
+    
+    .host-section { padding-bottom: 60px; margin-bottom: 30px; }
+}
+
+@media screen and (max-width: 576px) {
+    .stats-container { grid-template-columns: 1fr !important; }
+    .hero-text { font-size: 16px; padding: 0 10px; }
+    .podcast-center-group { width: 280px; }
+    .footer-social-simple { flex-direction: column; gap: 15px; }
 }
