@@ -61,68 +61,191 @@ body{
   opacity: 0.9;
 }
 /*banner style*/
-.banner-section{
+.banner-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 80px 20px;
-  position: relative; 
-  z-index: 1;
-}
-.banner-image-wrapper {
-  position: relative;
+  padding: 60px 0;
   width: 100%;
-  max-width: 800px;
-  height: 350px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
+  overflow: hidden; 
 }
 
-.banner-img-container {
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-}
-.banner-img-container img {
-  width: 100%;
-}
-.podcast-main {
+.full-width-wave {
   position: relative;
-  width: 280px;
+  width: 100vw; 
+  height: 480px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
-.podcast-main img {
-  width: 100%;
-}
-.podcast-last {
+
+
+.full-width-wave > img {
   position: absolute;
-  width: 120px; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; 
+  height: auto;
+  opacity: 0.6;
+  z-index: 1;
 }
-.podcast-last img {
-  width: 100%;
-}
+
 .new-badge {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   background-color: #00FF94;
   color: black;
-  padding: 5px 12px;
+  padding: 4px 10px;
   border-radius: 20px;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 12px;
+  z-index: 10;
+}
+
+
+.podcast-center-group {
+  position: relative;
+  width: 350px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5; 
+}
+
+.main-circle {
+  width: 100%;
+}
+
+.mic-icon {
+  position: absolute;
+  width: 130px; 
+  z-index: 6; 
 }
 .hero-title {
-  font-size: 48px;
+  font-size: 64px;
+  font-weight: 800;
+  color: #ffffff;
   margin-top: 20px;
+  position: relative;
+  z-index: 10; 
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
 }
+
+
 .hero-text {
   max-width: 600px;
-  margin: 15px 0;
+  margin: 10px auto 30px;
   color: #cbd5e1;
+  font-size: 18px;
+}
+.hero-btns {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.spotify-btn {
+  background: linear-gradient(to right, #FFD700, #FF2E97, #A855F7);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.subscribe-outline {
+  background: transparent;
+  color: #00FF94;
+  border: 2px solid #00FF94;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero-btns button img {
+  width: 20px; 
+  height: 20px;
+  object-fit: contain;
+}
+
+.hero-btns button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+/*about Section style*/
+.about-section {
+  padding: 80px 20px;
+  background-color: #0A0118;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.about-description {
+  font-size: 18px;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-footer-text {
+  font-size: 16px;
+  color: #94a3b8;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 40px auto 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 60px;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 200px;
+}
+
+.stat-number {
+  font-size: 56px;
+  font-weight: 800;
+  color: #00FF94; 
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #94a3b8;
+  letter-spacing: 1px;
 }
