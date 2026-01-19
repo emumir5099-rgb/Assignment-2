@@ -362,3 +362,119 @@ body{
     gap: 8px;
     font-size: 14px;
 }
+/*host sec style*/
+.host-section .section-title {
+    text-align: center; 
+    font-size: 42px;
+    font-weight: 800;
+    color: white; 
+    margin-bottom: 50px;
+    width: 100%; 
+}
+.highlight-text ,.section-title{
+    background: linear-gradient(to right, #FFD700, #FF2E97, #A855F7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.host-card {
+    background: #160D25; 
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 30px; 
+    display: flex;
+    align-items: center; 
+    gap: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.host-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.social-icon img {
+    width: 18px; 
+    height: 18px;
+    object-fit: contain;
+}
+.social-icon:hover {
+    background: linear-gradient(to right, #FF2E97, #A855F7);
+    border-color: transparent;
+}
+/* Responsive style */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .features-grid, .stats-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 25px;
+    }
+
+    .host-card {
+        padding: 35px;
+        gap: 30px;
+    }
+
+    .host-photo {
+        width: 160px;
+        height: 160px;
+    }
+
+    .episodes-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .episode-card {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 576px) {
+    body {
+        overflow-x: hidden;
+    }
+    .navber-section {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    .full-width-wave {
+        width: 100%;
+        height: auto;
+    }
+
+    .mic-icon {
+        width: 80px !important;
+    }
+    .wide, .mid-wide {
+        grid-column: span 1 !important;
+        display: block !important;
+    }
+
+    
+    .host-card {
+        flex-direction: column;
+        text-align: center;
+        width: 95%;
+    }
+}
