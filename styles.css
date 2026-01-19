@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: sans-serif;
 }
 
 body{
@@ -18,6 +18,111 @@ body{
   padding: 20px 80px;
   background-color: #050012;
 }
-..navber-section ul{
-  
+.navber-section ul{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.navber-section ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.navber-section ul li a:hover{
+  color: #a855f7;
+}
+.logo{
+  font-size: 32px;
+  font-weight: 800;
+  color: white;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+.gradient-text{
+  background: linear-gradient(to right,#ec4899, #a855f7);
+  margin-left: 2px;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.btn{
+   background: linear-gradient(to right,#FFCC33, #ec4899, #a855f7);
+   color: white;
+   padding: 10px 25px;
+   border: none;
+   border-radius: 50px;
+   font-weight: bold;
+   cursor: pointer;
+   font-size: 16px;
+   transition: 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+/*banner style*/
+.banner-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative; 
+  z-index: 1;
+}
+.banner-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 350px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.banner-img-container {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.banner-img-container img {
+  width: 100%;
+}
+.podcast-main {
+  position: relative;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.podcast-main img {
+  width: 100%;
+}
+.podcast-last {
+  position: absolute;
+  width: 120px; 
+}
+.podcast-last img {
+  width: 100%;
+}
+.new-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #00FF94;
+  color: black;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.hero-title {
+  font-size: 48px;
+  margin-top: 20px;
+}
+.hero-text {
+  max-width: 600px;
+  margin: 15px 0;
+  color: #cbd5e1;
 }
