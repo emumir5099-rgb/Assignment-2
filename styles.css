@@ -496,21 +496,20 @@ body{
     }
     .podcast-center-group {
     position: relative;
-    width: 250px; 
-    height: 250px;
+    width: 280px;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
-
 .mic-icon {
-    position: absolute; 
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 130px; 
-    z-index: 6; 
+    width: 120px;
+    z-index: 6;
 }
   .side-wave {
     display: none;
